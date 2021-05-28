@@ -1,0 +1,28 @@
+{
+  "name": "juicy-test-static",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve --open",
+    "build": "cross-env NODE_ENV=production webpack --mode production"
+  },
+  "author": "Maksym Vasylenko <maximvasylenko228322@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.0.1",
+    "clean-webpack-plugin": "*",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-sass": "^6.0.0",
+    "sass-loader": "^11.1.1",
+    "tailwindcss": "^2.1.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
