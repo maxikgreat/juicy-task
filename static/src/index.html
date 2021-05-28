@@ -5,13 +5,75 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Juicy Static</title>
 </head>
-<body class="d-flex justify-content-center align-items-center">
+<body class="h-100 w-100">
+    <header class="header">
+        <div class="top-stripe">
+            <div class="container-lg h-100 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <i class="fa fa-phone-alt top-stripe__call-icon pe-2"></i>
+                    <div class="top-stripe__text">
+                        Call <a class="top-stripe__phone-link" href="tel:+001555801">+001555801</a>
+                    </div>
+                </div>
+                <nav class="top-stripe__nav">
+                    <a href="#" class="top-stripe__link px-4">welcome msg!</a>
+                    <a href="#" class="top-stripe__link px-4">my account</a>
+                    <a href="#" class="top-stripe__link px-4">my wishlist</a>
+                    <a href="#" class="top-stripe__link ps-4">login</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header-nav container-lg">
+            <div class="h-100 row d-flex align-items-center">
+                <nav class="col-4">
+                    <a href="#" class="header-nav__link me-4">Home</a>
+                    <a href="#" class="header-nav__link me-4">Gallery</a>
+                    <a href="#" class="header-nav__link me-4">Categories</a>
+                    <a href="#" class="header-nav__link me-4">Pages</a>
+                </nav>
+                <div class="logo col-4 text-center">
+                    Shophia
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                    <div class="socials header-nav__socials socials_primary d-flex me-5">
+                        <div class="socials__link me-3">
+                            <div class="fab fa-facebook"></div>
+                        </div>
+                        <div class="socials__link me-3">
+                            <div class="fab fa-twitter"></div>
+                        </div>
+                        <div class="socials__link me-3">
+                            <div class="fab fa-pinterest"></div>
+                        </div>
+                        <div class="socials__link">
+                            <div class="fab fa-instagram"></div>
+                        </div>
+                    </div>
+                    <div class="locale-switch position-relative">
+                        <div class="locale-switch__arrow position-absolute">
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <select class="locale-switch__select">
+                            <option class="locale-switch__options" selected value="rupian">rupian</option>
+                            <option class="locale-switch__options" value="dollar">dollar</option>
+                            <option class="locale-switch__options" value="euro">euro</option>
+                            <option class="locale-switch__options" value="zloty">zloty</option>
+                        </select>
+                    </div>
 
-        <span>
-            hello
-        </span>
+                </div>
+            </div>
 
+        </div>
+    </header>
+    <main style="background: black; height: 300px;">
+        <section class="carousel" style="background: black">
+            <div class="carousel__top-triangle"></div>
+
+        </section>
+    </main>
 </body>
 </html>

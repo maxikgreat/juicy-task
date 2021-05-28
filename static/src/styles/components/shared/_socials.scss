@@ -1,0 +1,18 @@
+.socials {
+  font-size: .9rem;
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  &_primary {
+    color: $primary-color;
+    .socials__link {
+      border: 1px solid $primary-color;
+    }
+  }
+}

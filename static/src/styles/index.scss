@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Pattaya&family=Playfair+Display:ital@1&display=swap');
+
 @import '~normalize.css';
 @import '~bootstrap/scss/bootstrap';
 
-$primary-color: red;
+// variables
+@import './vars';
 
-h1 {
-  color: $primary-color;
+// components and its elements related to particular section
+@import './components/header/header';
+
+// reusable components throw all page
+@import './components/shared/logo';
+@import './components/shared/socials';
+@import './components/shared/locale-switch';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $light-color;
+  font-family: Lato;
+}
+
+a {
+  text-decoration: none;
 }

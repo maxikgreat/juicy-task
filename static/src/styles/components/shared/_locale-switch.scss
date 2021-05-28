@@ -1,0 +1,19 @@
+.locale-switch {
+
+  &__arrow {
+    font-size: .5rem;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $light-second-color;
+  }
+  &__select {
+    background-color: $black;
+    width: 75px;
+    color: $light-second-color;
+    font-size: .70rem;
+    text-transform: uppercase;
+    padding: 5px;
+    appearance: none;
+  }
+}
