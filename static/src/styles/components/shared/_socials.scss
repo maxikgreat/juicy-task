@@ -1,6 +1,7 @@
 .socials {
   font-size: .9rem;
   &__link {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -8,6 +8,7 @@
 
 // components and its elements related to particular section
 @import './components/header/header';
+@import './components/carousel/carousel';
 
 // reusable components throw all page
 @import './components/shared/logo';
@@ -25,4 +26,7 @@ body {
 
 a {
   text-decoration: none;
+  &:hover {
+    color: initial;
+  }
 }
