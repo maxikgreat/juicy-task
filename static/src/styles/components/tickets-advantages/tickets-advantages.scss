@@ -23,38 +23,29 @@
       flex-grow: 1;
       background-color: $dark-color;
 
-      &:before {
+      &:before, &:after {
         content: "";
         position: absolute;
-        right: -1px;
         bottom: 0;
         width: 0;
         height: 0;
-        border-left: 25px solid white;
-        border-top: 43px solid transparent;
-        border-bottom: 43px solid transparent;
+        @include chevron-mixin($white);
+      }
+
+      &:before {
+        right: -1px;
         transform: rotate(180deg);
       }
 
       &:after {
-        content: "";
-        position: absolute;
         left: -1px;
-        bottom: 0;
-        width: 0;
-        height: 0;
-        border-left: 25px solid white;
-        border-top: 43px solid transparent;
-        border-bottom: 43px solid transparent;
       }
     }
   }
 
   &__arrow {
     width: 5%;
-    border-left: 25px solid #d8c092;
-    border-top: 44px solid transparent;
-    border-bottom: 44px solid transparent;
+    @include chevron-mixin($primary-color);
     &_left {
       transform: translate(-1px, -1px);
     }

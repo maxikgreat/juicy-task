@@ -1,0 +1,5 @@
+@mixin chevron-mixin ($color) {
+  border-left: 25px solid $color;
+  border-top: 44px solid transparent;
+  border-bottom: 44px solid transparent;
+}

@@ -6,6 +6,9 @@
 // variables
 @import './vars';
 
+// mixins
+@import './mixins/chevron-mixin';
+
 // components and its elements related to particular section
 @import './components/header/header';
 @import './components/carousel/carousel';
