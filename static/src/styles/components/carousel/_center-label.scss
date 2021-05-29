@@ -1,0 +1,24 @@
+.center-label {
+  text-transform: uppercase;
+
+  &__box-outer {
+    width: 225px;
+    height: 225px;
+    border: 2px solid $white;
+  }
+
+  &__box-inner {
+    border: 1px solid $white;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      &:last-of-type {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

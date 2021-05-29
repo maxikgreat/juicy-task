@@ -1,3 +1,6 @@
+@import './center-label';
+@import './cta-button';
+
 .carousel {
   position: relative;
   height: $carousel-height;
@@ -21,50 +24,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-transform: uppercase;
   }
 
-  &__center-label-box {
-    &_bordered-outer {
-      width: 225px;
-      height: 225px;
-      border: 2px solid $white;
-    }
-
-    &_bordered-inner {
-      flex: 1;
-      border: 1px solid $white;
-      h2 {
-        font-size: 3rem;
-      }
-      p {
-        font-size: 1.2rem;
-        &:last-of-type {
-          font-size: 1.3rem;
-        }
-      }
-    }
-  }
-
-  &__cta-button {
-    background-color: $secondary-color;
-    text-transform: uppercase;
-    color: $white;
-    margin-top: 40px;
-    font-size: 1.2rem;
-    padding: 5px 20px;
-    outline: none;
-
-    &:active, &:focus {
-      outline: none;
-    }
-
-    &:hover {
-      color: $secondary-color;
-      background-color: $white;
-    }
-  }
-
+  // rewriteted default bootstrap styles
   &-item img {
     height: $carousel-height;
   }
