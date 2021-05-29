@@ -4,6 +4,7 @@ const path = require('path');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const isProd = process.env.NODE_ENV === 'production';
 const isDev = !isProd;
@@ -49,11 +50,19 @@ module.exports = {
             }
           }
         ]
-      }
+      },
     ],
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src', 'assets'),
+          to: path.resolve(__dirname, 'dist', 'assets')
+        },
+      ],
+    }),
     new HTMLWebpackPlugin({
       template: 'index.html',
       minify: {

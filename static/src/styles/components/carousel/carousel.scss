@@ -1,7 +1,9 @@
 .carousel {
-  height: 600px;
-  background: url('../assets/backgrounds/carousel-img.jpeg') no-repeat center;
+  position: relative;
+  height: $carousel-height;
   &__top-triangle {
+    position: absolute;
+    z-index: 100;
     top: -1px;
     left: 50%;
     transform: translateX(-50%);
@@ -11,5 +13,71 @@
     border-left-width: 150px;
     width: 250px;
     height: 50px;
+  }
+
+  &__center-label {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+  }
+
+  &__center-label-box {
+    &_bordered-outer {
+      width: 225px;
+      height: 225px;
+      border: 2px solid $white;
+    }
+
+    &_bordered-inner {
+      flex: 1;
+      border: 1px solid $white;
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.2rem;
+        &:last-of-type {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  &__cta-button {
+    background-color: $secondary-color;
+    text-transform: uppercase;
+    color: $white;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    outline: none;
+
+    &:active, &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      color: $secondary-color;
+      background-color: $white;
+    }
+  }
+
+  &-item img {
+    height: $carousel-height;
+  }
+
+  &-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    padding: 0;
+    margin: 0 5px 0 5px;
+
+    &.active {
+      background-color: $dark-color;
+    }
   }
 }

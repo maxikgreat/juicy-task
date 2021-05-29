@@ -1,0 +1,24 @@
+.line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  background: white;
+  z-index: -10;
+}
+
+.text-with-lines {
+  position: relative;
+
+  &__line {
+    &_long {
+      width: 100px;
+      bottom: 3px;
+    }
+    &_short {
+      width: 75px;
+      top: 3px;
+    }
+  }
+}
+

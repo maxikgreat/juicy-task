@@ -1,5 +1,7 @@
 .locale-switch {
+  position: relative;
   &__arrow {
+    position: absolute;
     font-size: .5rem;
     right: 10%;
     top: 50%;
