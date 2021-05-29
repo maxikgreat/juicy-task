@@ -1,0 +1,40 @@
+.section-title {
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: .75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__shape {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    background-color: $primary-color;
+    transform: rotate(45deg);
+  }
+
+  &__text {
+    position: relative;
+    margin: 0 60px;
+
+    &:after, &:before {
+      position: absolute;
+      top: 50%;
+      content: '';
+      display: block;
+      width: 2000px;
+      height: 2px;
+      transform: translateY(-50%);
+      background-color: $light-second-color;
+    }
+
+    &:after {
+      left: 285px;
+    }
+
+    &:before {
+      right: 285px;
+    }
+  }
+}

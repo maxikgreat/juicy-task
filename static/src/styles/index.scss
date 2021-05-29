@@ -8,17 +8,21 @@
 
 // mixins
 @import './mixins/chevron-mixin';
-
-// components and its elements related to particular section
-@import './components/header/header';
-@import './components/carousel/carousel';
-@import './components/tickets-advantages/tickets-advantages';
+@import './mixins/button';
 
 // reusable components throw all page
 @import './components/shared/logo';
 @import './components/shared/socials';
 @import './components/shared/locale-switch';
 @import './components/shared/text-with-lines';
+@import './components/shared/section-title';
+@import './components/shared/button';
+
+// components and its elements related to particular section
+@import './components/header/header';
+@import './components/carousel/carousel';
+@import './components/tickets-advantages/tickets-advantages';
+@import './components/offers/offers';
 
 * {
   box-sizing: border-box;

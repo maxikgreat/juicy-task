@@ -1,0 +1,8 @@
+.button {
+  @include button($secondary-color, $white);
+
+  &_sm {
+    font-size: .85rem;
+    padding: 5px 15px;
+  }
+}

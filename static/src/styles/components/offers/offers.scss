@@ -1,0 +1,55 @@
+.offers {
+  margin: 60px 0;
+  &__items {
+    margin: 40px 0;
+    height: $offers-items-height;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  &__item {
+    display: flex;
+    position: relative;
+    padding: 20px 15px;
+    > img {
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      object-fit: cover;
+      z-index: -10;
+    }
+  }
+
+  &__border {
+    flex: 1;
+    position: relative;
+    border: 2px solid $white;
+    transition: background-color .2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: transparentize($dark-third-color, .35);
+      .offers__button {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s ease-in-out;
+  }
+}
