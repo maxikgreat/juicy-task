@@ -11,18 +11,18 @@
 @import './mixins/button';
 
 // reusable components throw all page
-@import './components/shared/logo';
-@import './components/shared/socials';
-@import './components/shared/locale-switch';
-@import './components/shared/text-with-lines';
-@import './components/shared/section-title';
-@import './components/shared/button';
+@import 'components/logo';
+@import 'components/socials';
+@import 'components/locale-switch';
+@import 'components/text-with-lines';
+@import 'components/section-title';
+@import 'components/button';
 
 // components and its elements related to particular section
-@import './components/header/header';
-@import './components/carousel/carousel';
-@import './components/tickets-advantages/tickets-advantages';
-@import './components/offers/offers';
+@import 'sections/header/header';
+@import 'sections/carousel/carousel';
+@import 'sections/tickets-advantages/tickets-advantages';
+@import 'sections/offers/offers';
 
 * {
   box-sizing: border-box;
