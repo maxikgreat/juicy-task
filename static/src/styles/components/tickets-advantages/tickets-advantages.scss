@@ -1,0 +1,80 @@
+.tickets-advantages {
+  height: $tickets-advantages-height;
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+
+    i {
+      margin-right: 20px;
+      color: $white;
+      font-size: 2.5rem;
+    }
+
+    &_left, &_right {
+      width: 95%;
+      background-color: $primary-color;
+    }
+
+    &_center {
+      flex-grow: 1;
+      background-color: $dark-color;
+
+      &:before {
+        content: "";
+        position: absolute;
+        right: -1px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 25px solid white;
+        border-top: 43px solid transparent;
+        border-bottom: 43px solid transparent;
+        transform: rotate(180deg);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: -1px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 25px solid white;
+        border-top: 43px solid transparent;
+        border-bottom: 43px solid transparent;
+      }
+    }
+  }
+
+  &__arrow {
+    width: 5%;
+    border-left: 25px solid #d8c092;
+    border-top: 44px solid transparent;
+    border-bottom: 44px solid transparent;
+    &_left {
+      transform: translate(-1px, -1px);
+    }
+
+    &_right {
+      transform: translate(1px, 1px) rotate(180deg);
+    }
+  }
+
+  &__text {
+    color: $white;
+    margin: 0;
+
+    &-big {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+    }
+
+    &-small {
+      font-size: .75rem;
+    }
+  }
+}
