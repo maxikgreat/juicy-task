@@ -20,6 +20,7 @@
   // rewritten default bootstrap styles
   &-item img {
     height: $carousel-height;
+    object-fit: cover;
   }
 
   &-indicators [data-bs-target] {
