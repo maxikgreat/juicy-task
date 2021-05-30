@@ -13,4 +13,42 @@
     @include absolute-center('x');
     top: -1px;
   }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > img {
+      width: 33%;
+      object-fit: contain;
+    }
+  }
+
+  &__text {
+    margin-top: 60px;
+    padding: 0 60px;
+    font-family: Playfair Display;
+    > p {
+      color: $white;
+    }
+
+    > h3 {
+      font-size: 1.5rem;
+    }
+
+    > span {
+      font-family: Lato;
+      text-transform: uppercase;
+      font-size: .75rem;
+      color: $dark-third-color;
+    }
+
+    &_left {
+      text-align: left;
+    }
+
+    &_right {
+      text-align: right;
+    }
+  }
 }
