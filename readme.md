@@ -1,8 +1,8 @@
 ## Recommended env.
 
-**node** > 10 v.
+**node** - 10 version or later.
 
-**npm** > 6 v.
+**npm** > 6 version or later.
 
 
 ## Static part
