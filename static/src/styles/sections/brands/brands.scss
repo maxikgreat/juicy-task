@@ -1,0 +1,11 @@
+.brands {
+  margin: 50px 0 30px 0;
+
+  &__container {
+    height: $brands-container-height;
+  }
+
+  &__item {
+    font-size: 3rem;
+  }
+}
