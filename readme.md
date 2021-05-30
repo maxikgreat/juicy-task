@@ -13,4 +13,4 @@ In root of repository (*/juicy-task*) run:
 
 To run project in dev mode run ```npm run start```
 
-To build once - ```npm run build```
+To build once - ```npm run build``` (you can see result in right away generated */dist* folder)
