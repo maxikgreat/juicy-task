@@ -6,7 +6,7 @@
 
 ## Static part
 
-In root of repository (*/juicy-test*) run:
+In root of repository (*/juicy-task*) run:
 1. ```cd static```
 2. ```npm ci```
 3. To run project in dev mode run ```npm run start```
