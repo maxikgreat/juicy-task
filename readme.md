@@ -9,7 +9,7 @@
 
 In root of repository (*/juicy-task*) run:
 1. ```cd static```
-2. ```npm ci```
+2. ```npm i```
 
 To run project in dev mode run ```npm run start```
 
