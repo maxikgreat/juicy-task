@@ -1,9 +1,12 @@
-.header-nav {
-  background-color: $light-color;
-  height: $header-header-nav-height;
+.header {
+  .header-nav {
+    background-color: $light-color;
+    height: $header-header-nav-height;
 
-  &__link {
-    font-family: Playfair Display;
-    color: $dark-third-color;
+    &__link {
+      font-family: Playfair Display;
+      color: $dark-third-color;
+    }
   }
 }
+

@@ -21,4 +21,19 @@
       border: 1px solid $primary-color;
     }
   }
+
+  &_black {
+    color: $black;
+    .socials__link {
+      background-color: $white;
+    }
+  }
+
+  &_big {
+    font-size: 1.25rem;
+    .socials__link {
+      width: 45px;
+      height: 45px;
+    }
+  }
 }

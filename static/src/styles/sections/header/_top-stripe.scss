@@ -1,22 +1,25 @@
-.top-stripe {
-  background-color: $light-second-color;
-  height: $header-top-stripe-height;
+.header {
+  .top-stripe {
+    background-color: $light-second-color;
+    height: $header-top-stripe-height;
 
-  &__call-icon {
-    font-size: .55rem;
-  }
+    &__call-icon {
+      font-size: .55rem;
+    }
 
-  &__text, ,&__phone-link, &__link {
+    &__text, ,&__phone-link, &__link {
     color: $dark-second-color;
     font-size: .65rem;
   }
 
-  &__link {
-    text-transform: uppercase;
-    border-right: 1px solid $dark-second-color;
+    &__link {
+      text-transform: uppercase;
+      border-right: 1px solid $dark-second-color;
 
-    &:last-child {
-      border-right: none;
+      &:last-child {
+        border-right: none;
+      }
     }
   }
+
 }

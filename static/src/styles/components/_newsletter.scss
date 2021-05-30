@@ -1,0 +1,23 @@
+.newsletter {
+  display: flex;
+  border: 1px solid $dark-third-color;
+  height: 32px;
+  width: 300px;
+  align-items: center;
+  font-size: .6rem;
+
+  &__input {
+    background: transparent;
+    border: none;
+    width: 70%;
+    padding-left: 10px;
+  }
+
+  &__button {
+    height: 80%;
+    border: none;
+    width: 29%;
+    font-size: .6rem;
+    @include button-color($dark-third-color, $white);
+  }
+}

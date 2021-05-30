@@ -1,5 +1,7 @@
+// fonts
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Pattaya&family=Playfair+Display:ital@1&display=swap');
 
+// libraries
 @import '~normalize.css';
 @import '~bootstrap/scss/bootstrap';
 
@@ -8,7 +10,7 @@
 
 // mixins
 @import './mixins/chevron-mixin';
-@import './mixins/button';
+@import './mixins/button-color';
 @import './mixins/after-before-lines';
 @import './mixins/apply-bg-images';
 @import './mixins/absolute-center';
@@ -21,6 +23,7 @@
 @import 'components/text-with-lines';
 @import 'components/section-title';
 @import 'components/button';
+@import 'components/newsletter';
 
 // components and its elements related to particular section
 @import 'sections/header/header';
@@ -30,6 +33,7 @@
 @import 'sections/gallery/gallery';
 @import 'sections/brands/brands';
 @import 'sections/testimonials/testimonials';
+@import 'sections/footer/footer';
 
 * {
   box-sizing: border-box;
@@ -47,7 +51,7 @@ a {
   }
 }
 
-.btn {
+button, .btn, input {
   outline: none;
   box-shadow: none;
 
@@ -56,4 +60,3 @@ a {
     outline: none;
   }
 }
-
