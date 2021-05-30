@@ -1,11 +1,9 @@
 .locale-switch {
   position: relative;
   &__arrow {
-    position: absolute;
+    @include absolute-center('y');
     font-size: .5rem;
     right: 10%;
-    top: 50%;
-    transform: translateY(-50%);
     color: $light-second-color;
   }
   &__select {

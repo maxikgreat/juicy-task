@@ -9,6 +9,9 @@
 // mixins
 @import './mixins/chevron-mixin';
 @import './mixins/button';
+@import './mixins/after-before-lines';
+@import './mixins/apply-bg-images';
+@import './mixins/absolute-center';
 
 // reusable components throw all page
 @import 'components/logo';
@@ -23,6 +26,7 @@
 @import 'sections/carousel/carousel';
 @import 'sections/tickets-advantages/tickets-advantages';
 @import 'sections/offers/offers';
+@import 'sections/gallery/gallery';
 
 * {
   box-sizing: border-box;
@@ -39,3 +43,14 @@ a {
     color: initial;
   }
 }
+
+.btn {
+  outline: none;
+  box-shadow: none;
+
+  &:hover, &:focus, &:active {
+    box-shadow: none;
+    outline: none;
+  }
+}
+

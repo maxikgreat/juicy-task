@@ -1,0 +1,9 @@
+@mixin after-before-lines($value) {
+  &:after {
+    left: $value !important;
+  }
+
+  &:before {
+    right: $value !important;
+  }
+}

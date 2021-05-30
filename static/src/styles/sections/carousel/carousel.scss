@@ -4,11 +4,9 @@
   position: relative;
   height: $carousel-height;
   &__top-triangle {
-    position: absolute;
+    @include absolute-center('x');
     z-index: 100;
     top: -1px;
-    left: 50%;
-    transform: translateX(-50%);
     border: 50px solid transparent;
     border-top-color: white;
     border-right-width: 150px;
@@ -18,11 +16,8 @@
   }
 
   &__center-label {
-    position: absolute;
+    @include absolute-center('xy');
     z-index: 100;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   // rewriteted default bootstrap styles

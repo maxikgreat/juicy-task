@@ -1,7 +1,5 @@
 .line {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  @include absolute-center('x');
   height: 1px;
   background: white;
   z-index: -10;

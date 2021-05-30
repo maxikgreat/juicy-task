@@ -1,0 +1,49 @@
+.gallery {
+  margin: 35px 0;
+
+  .section-title__text {
+    @include after-before-lines(380px);
+  }
+
+  &__items {
+    margin: 40px 0;
+    height: $gallery-items-height;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  &__item {
+    position: relative;
+    @include apply-bg-images(8, 'gallery__item');
+  }
+
+  &__button {
+    transition: border-bottom-color .2s ease-in-out;
+    display: flex;
+    @include absolute-center('x');
+    bottom: 0;
+    color: $white;
+    font-size: .90rem;
+    text-transform: uppercase;
+    border-bottom: 45px solid $dark-color;
+    border-left:40px solid transparent;
+    border-right: 40px solid transparent;
+    height: 0;
+    width: 70%;
+    > span {
+      @include absolute-center('x');
+      bottom: -33px;
+      white-space: nowrap;
+    }
+
+    outline: none;
+
+    &:hover {
+      color: $white;
+      border-bottom-color: $secondary-color;
+      outline: none;
+    }
+  }
+}

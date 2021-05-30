@@ -1,7 +1,7 @@
 .section-title {
   font-family: Playfair Display;
   font-weight: bold;
-  font-size: .75rem;
+  font-size: .65rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,15 +19,14 @@
     margin: 0 60px;
 
     &:after, &:before {
-      position: absolute;
-      top: 50%;
+      @include absolute-center('y');
       content: '';
       display: block;
       width: 2000px;
       height: 2px;
-      transform: translateY(-50%);
       background-color: $light-second-color;
     }
+
 
     &:after {
       left: 285px;

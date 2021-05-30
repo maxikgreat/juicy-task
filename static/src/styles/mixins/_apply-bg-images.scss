@@ -1,0 +1,8 @@
+@mixin apply-bg-images($elements-num, $img-name) {
+  @for $i from 1 through $elements-num {
+    &:nth-child(#{$i}) {
+      background: url('/assets/#{$img-name}#{$i}.jpeg') no-repeat center;
+      background-size: cover;
+    }
+  }
+}
