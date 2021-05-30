@@ -14,6 +14,7 @@
 @import './mixins/absolute-center';
 
 // reusable components throw all page
+@import 'components/triangle';
 @import 'components/logo';
 @import 'components/socials';
 @import 'components/locale-switch';
@@ -28,6 +29,7 @@
 @import 'sections/offers/offers';
 @import 'sections/gallery/gallery';
 @import 'sections/brands/brands';
+@import 'sections/testimonials/testimonials';
 
 * {
   box-sizing: border-box;

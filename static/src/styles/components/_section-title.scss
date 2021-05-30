@@ -18,22 +18,6 @@
     position: relative;
     margin: 0 60px;
 
-    &:after, &:before {
-      @include absolute-center('y');
-      content: '';
-      display: block;
-      width: 2000px;
-      height: 2px;
-      background-color: $light-second-color;
-    }
-
-
-    &:after {
-      left: 285px;
-    }
-
-    &:before {
-      right: 285px;
-    }
+    @include after-before-lines();
   }
 }

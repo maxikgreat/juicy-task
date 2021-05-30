@@ -1,0 +1,16 @@
+.testimonials {
+  .section-title__text {
+    @include after-before-lines(350px);
+  }
+
+  &__container {
+    position: relative;
+    height: $testimonials-container-height;
+    background-color: $primary-color;
+  }
+
+  &__triangle {
+    @include absolute-center('x');
+    top: -1px;
+  }
+}
